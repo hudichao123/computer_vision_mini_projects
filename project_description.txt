@@ -1,0 +1,38 @@
+
+
+
+
+There are three projects in this repo.
+£¡£¡£¡£¡Warning£¡£¡£¡£¡
+If you downloaded this repo from github than you WON'T be able to run the python file because some files are too large to be uploaded to github repo.
+Instead, you can download the complete repo from
+https://pan.baidu.com/s/1eR5aStkiTQuj-BeN-eMrLw
+
+I also included the virtual_environment that I used for these projects in case you have a different version of python or Pytorch or numpy...
+Downloading could take a while, so please be patient.
+
+
+
+
+Then comes the project description!
+
+
+
+
+The first one is Face_Recognition, using face classifier and eye classifier to detect faces and eyes
+from the image and then put rectangle bounding boxes at the detected features.
+
+
+The second one is Object Detection using pretrained single shot multi-box detection model.
+I take short videos as inputs, convert them into frames of images(using openCV),
+and then apply ssd to the images and finally put rectangle bounding boxes at the detected features.
+The several .mp4 files are inputs and outputs. And it seems that ssd is performing really well if the
+objects are not overlapping.
+
+
+
+The third one is about training a deep convolutional generative adversarial network(GANS) for image generation using pytorch.
+I built up the generator with  deconvolution layers(100->512->256->128->64->3), RELU layers, Batchnorm layers(100->512->256->128->64->3) and one output tanh layer.
+And the discrminator is build up with convolution layers (3->64->128->256->512->1), LEAKY RELU layers, Batchnorm layers(3->64->128->256->512->1) and one output sigmoid layer.
+Finally I stored the output of the model at the end of each epoch (25 epoches in all) in the results/ folder.
+Obviously this model is doing really well on generating image just after the first several epoches.

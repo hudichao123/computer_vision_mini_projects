@@ -1,0 +1,6 @@
+This project is about using a pretrained single shot multibox detection model for object detection in videos.
+Details are inside the object_detection_with_ssd.py file
+
+
+!!!!!!!!!!!!!!!
+!!!!!!!Please unzip the ssd300_mAP_77.43_v2.zip file before running object_detection_with_ssd.py !!
